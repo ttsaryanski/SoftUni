@@ -26,6 +26,8 @@ describe("Tests for planYourTrip", () => {
     describe("exploreOptions", () => {
         it("should throw an error for non-array activities parameter", () => {
             expect(() => planYourTrip.exploreOptions("Skiing", 0)).to.throw("Invalid Information!");
+            expect(() => planYourTrip.exploreOptions("Skiing", {})).to.throw("Invalid Information!");
+            expect(() => planYourTrip.exploreOptions("Skiing", 'a')).to.throw("Invalid Information!");
         });
 
         it("should throw an error for invalid activityIndex", () => {
@@ -45,12 +47,18 @@ describe("Tests for planYourTrip", () => {
             expect(() => planYourTrip.estimateExpenses(-100, 2)).to.throw("Invalid Information!");
             expect(() => planYourTrip.estimateExpenses("100", 2)).to.throw("Invalid Information!");
             expect(() => planYourTrip.estimateExpenses(0, 2)).to.throw("Invalid Information!");
+            expect(() => planYourTrip.estimateExpenses([], 2)).to.throw("Invalid Information!");
+            expect(() => planYourTrip.estimateExpenses(null, 2)).to.throw("Invalid Information!");
+            expect(() => planYourTrip.estimateExpenses(undefined, 2)).to.throw("Invalid Information!");
         });
 
         it("should throw an error for invalid fuelCostPerLiter", () => {
             expect(() => planYourTrip.estimateExpenses(100, -2)).to.throw("Invalid Information!");
             expect(() => planYourTrip.estimateExpenses(100, "2")).to.throw("Invalid Information!");
             expect(() => planYourTrip.estimateExpenses(100, 0)).to.throw("Invalid Information!");
+            expect(() => planYourTrip.estimateExpenses(100, [])).to.throw("Invalid Information!");
+            expect(() => planYourTrip.estimateExpenses(100, null)).to.throw("Invalid Information!");
+            expect(() => planYourTrip.estimateExpenses(100, undefined)).to.throw("Invalid Information!");
         });
 
         it("should return budget-friendly message for cost <= 500", () => {
