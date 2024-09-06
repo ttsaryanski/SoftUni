@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reggae+One&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reggae+One&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.text {
+    font-family: "Raleway", sans-serif;
+    color: #565759;
+}
+
+h1, h2 {
+    font-family: "Great Vibes", cursive;
+}
+
+section {
+    margin: 40px;
+    margin-top: 60px;
+}

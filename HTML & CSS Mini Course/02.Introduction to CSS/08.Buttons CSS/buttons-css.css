@@ -1,0 +1,26 @@
+body {
+    background-color: #EEEEEE;
+}
+
+button {
+    border-radius: 14px;
+    border: 2px solid #333333;
+    padding: 5px 15px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.filled button, .icon button {
+    background-color: #333333;
+    color: #EEEEEE;
+}
+
+.filled button:hover, .icon button:hover {
+    background-color: #006500;
+    color: #EEEEEE;
+    border-color: #006500;
+    cursor: pointer;
+}
+
+
+
