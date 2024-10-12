@@ -19,7 +19,7 @@ router.get('/about', (req, res) => {
 });
 
 router.get('/profile', async (req, res) => {
-    const userId = req.user._id;
+    const userId = req.user?._id;
     
     try {
         const createdProducts = await productService.getMyProducts(userId).lean();
