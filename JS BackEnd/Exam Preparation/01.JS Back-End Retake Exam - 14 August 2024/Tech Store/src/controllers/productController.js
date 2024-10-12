@@ -1,4 +1,5 @@
 import { Router } from "express";
+
 import productService from "../services/productService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
 import { checkOwner, checkNotOwner } from '../middlewares/ownerMiddleware.js';
@@ -26,6 +27,7 @@ router.post('/create', isAuth, async (req, res) => {
 
     try {
         await productService.create(data, ownerId);
+        
         res.redirect('/device/catalog');
     } catch (error) {
         return res.render('product/create', { data, error: createErrorMsg(error) });
@@ -76,6 +78,7 @@ router.post('/:productId/edit', isAuth, checkOwner, async (req, res) => {
 
     try {
         await productService.edit(productId, product);
+        
         res.redirect(`/device/${productId}/details`);
     } catch (error) {
         return res.render('product/edit', { product, error: createErrorMsg(error) });
