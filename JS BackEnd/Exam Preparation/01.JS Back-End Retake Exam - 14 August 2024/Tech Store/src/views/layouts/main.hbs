@@ -30,15 +30,15 @@
         </div>
     </header>
 
-    {{#if error}}
-        <div>
-            <div class="errorContainer">
-                <p>{{error}}</p>
-            </div>
-        </div>
-    {{/if}}
-
     <main>
+        {{#if error}}
+            <div>
+                <div class="errorContainer">
+                    <p>{{error}}</p>
+                </div>
+            </div>
+        {{/if}}
+        
         {{{body}}}
     </main>
 
