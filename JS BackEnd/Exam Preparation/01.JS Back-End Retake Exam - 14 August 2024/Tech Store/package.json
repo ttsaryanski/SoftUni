@@ -1,7 +1,7 @@
 {
   "name": "tech-store",
   "version": "1.0.0",
-  "description": "",
+  "description": "JS BackEnd Exam Prep",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tsvetan Tsaryanski",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.7"
