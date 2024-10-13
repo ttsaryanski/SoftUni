@@ -1,5 +1,5 @@
 {
-  "name": "Home-Cooking-Recipes",
+  "name": "home-cooking-recipes",
   "version": "1.0.0",
   "description": "JS BackEnd Exam Prep",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Tsvetan Tsaryasnki",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.1.7"
