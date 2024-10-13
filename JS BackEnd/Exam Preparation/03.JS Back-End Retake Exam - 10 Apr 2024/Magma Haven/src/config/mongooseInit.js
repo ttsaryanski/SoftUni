@@ -4,7 +4,7 @@ import { LocalDB_URL, CloudDB_URL } from './constans.js';
 
 export default async function mongooseInit() {
     try {
-        await connect(LocalDB_URL, { dbName: 'xxx'});
+        await connect(LocalDB_URL, { dbName: 'MagmaHaven'});
     
         console.log('Successfully connect to local DB!');  
     } catch (error) {
@@ -12,7 +12,7 @@ export default async function mongooseInit() {
         console.log(error.message);
 
         try {
-            await connect(CloudDB_URL, { dbName: 'xxx'});
+            await connect(CloudDB_URL, { dbName: 'MagmaHaven'});
     
             console.log('Successfully connect to cloud DB!');
         } catch (error) {
