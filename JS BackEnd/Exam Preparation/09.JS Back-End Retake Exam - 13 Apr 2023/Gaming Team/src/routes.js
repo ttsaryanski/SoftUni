@@ -1,0 +1,17 @@
+import { Router } from 'express';
+import homeController from './controllers/homeController.js';
+import itemControler from './controllers/itemController.js';
+import authController from './controllers/authController.js';
+import { isAuth } from './middlewares/authMiddleware.js';
+
+const routes = Router();
+
+routes.use(homeController);
+routes.use('/item', itemControler);
+routes.use('/auth', authController);
+
+routes.use('*', (req, res) => {
+    res.render('404', { title: '404 Page - Gaming Team'});
+})
+
+export default routes;
