@@ -14,8 +14,8 @@
             <p id="votes">Vote's Count: {{item.usersList.length}}</p>
             <p id="description">{{item.description}}</p>
         </div>
+        {{#if isAuthenticated}}
         <div class="product-btn">
-            {{#if isAuthenticated}}
             {{#if isOwner}}
                 <div class="author">
                     <a href="/item/{{item._id}}/edit" class="btn-edit">Edit</a>
@@ -28,7 +28,7 @@
                 <a href="/item/{{item._id}}/like" class="btn-vote">Vote</a>
             {{/if}}
             {{/if}}
-            {{/if}}
         </div>
+        {{/if}}
     </div>
 </section>

@@ -14,7 +14,7 @@ router.post('/register', isGuest, async (req, res) => {
     const { name, email, password, rePassword } = req.body;
 
     if (rePassword !== password) {
-        return res.render('auth/register', { name, email, error: 'Password missmatch!' });
+        return res.render('auth/register', { name, email, title: 'Register Page', error: 'Password missmatch!' });
     }
 
     try {
@@ -25,7 +25,7 @@ router.post('/register', isGuest, async (req, res) => {
 
         res.redirect('/');
     } catch (error) {
-        return res.render('auth/register', { name, email, error: createErrorMsg(error) });
+        return res.render('auth/register', { name, email, title: 'Register Page', error: createErrorMsg(error) });
     }
 });
 
@@ -42,7 +42,7 @@ router.post('/login', isGuest, async (req, res) => {
         
         res.redirect('/');
     } catch (error) {
-        return res.render('auth/login', { email, error: createErrorMsg(error)});
+        return res.render('auth/login', { email, title: 'Login Page', error: createErrorMsg(error)});
     }
 });
 

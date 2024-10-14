@@ -13,7 +13,7 @@ router.get('/catalog', async (req, res) => {
     
         res.render('item/catalog', { items, title: 'Dashboard Page' });    
     } catch (error) {
-        return res.render('item/catalog', { error: createErrorMsg(error) });
+        return res.render('item/catalog', { title: 'Dashboard Page', error: createErrorMsg(error) });
     }
 });
 
@@ -30,7 +30,7 @@ router.post('/create', isAuth, async (req, res) => {
     
         res.redirect('/item/catalog');
     } catch (error) {
-        return res.render('item/create', { item, error: createErrorMsg(error) });
+        return res.render('item/create', { item, title: 'Create Page', error: createErrorMsg(error) });
     }
 });
 
@@ -38,11 +38,11 @@ router.get('/search', async (req, res) => {
     const query = req.query;
 
     try {
-        const items = await itemService.getAll(query).lean(); // sort()
+        const items = await itemService.getAll(query).lean();
     
         res.render('item/search', { items, query, title: 'Search Page' }); 
     } catch (error) {
-        return res.render('item/search', { error: createErrorMsg(error)});
+        return res.render('item/search', { title: 'Search Page', error: createErrorMsg(error)});
     }
 });
 
@@ -57,7 +57,7 @@ router.get('/:itemId/details', async (req, res) => {
     
         res.render('item/details', { item, isOwner, isLiked, title: 'Details Page' });
     } catch (error) {
-        return res.render('item/details', { error: createErrorMsg(error) });
+        return res.render('item/details', { title: 'Details Page', error: createErrorMsg(error) });
     }
 });
 
@@ -69,7 +69,7 @@ router.get('/:itemId/delete', isAuth, checkOwner, async (req, res) => {
     
         res.redirect('/item/catalog');
     } catch (error) {
-        return res.render('item/details', { error: createErrorMsg(error) });
+        return res.render('404', { title: '404 Page', error: createErrorMsg(error) });
     }
 });
 
@@ -81,7 +81,7 @@ router.get('/:itemId/edit', isAuth, checkOwner, async (req, res) => {
     
         res.render('item/edit', { item, title: 'Edit Page' });
     } catch (error) {
-        return res.render('item/edit', { error: createErrorMsg(error) });
+        return res.render('item/edit', { title: 'Edit Page', error: createErrorMsg(error) });
     }
 });
 
@@ -94,7 +94,7 @@ router.post('/:itemId/edit', isAuth, checkOwner, async (req, res) => {
     
         res.redirect(`/item/${itemId}/details`);
     } catch (error) {
-        return res.render('item/edit', { item, error: createErrorMsg(error) });
+        return res.render('item/edit', { item, title: 'Edit Page', error: createErrorMsg(error) });
     }
 });
 
@@ -107,7 +107,7 @@ router.get('/:itemId/like', isAuth, checkNotOwner, async (req, res) => {
 
         res.redirect(`/item/${itemId}/details`);
     } catch (error) {
-        return res.render(`item/details`, { error: createErrorMsg(error) });
+        return res.render('404', { title: '404 Page', error: createErrorMsg(error) });
     }
 });
 

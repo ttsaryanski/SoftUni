@@ -12,7 +12,7 @@ router.get('/catalog', async (req, res) => {
     
         res.render('product/catalog', { products,  isCatalog: true, title: 'TechStore - Product Catalog' });    
     } catch (error) {
-        return res.render('product/catalog', { isCatalog: true, error: createErrorMsg(error) });
+        return res.render('product/catalog', { isCatalog: true, title: 'TechStore - Product Catalog', error: createErrorMsg(error) });
     }
 });
 
@@ -28,7 +28,7 @@ router.post('/create', isAuth, async (req, res) => {
         await productService.create(data, ownerId);
         res.redirect('/device/catalog');
     } catch (error) {
-        return res.render('product/create', { data, error: createErrorMsg(error) });
+        return res.render('product/create', { data, title: 'TechStore - Create Product', error: createErrorMsg(error) });
     }
 });
 
@@ -43,7 +43,7 @@ router.get('/:productId/details', async (req, res) => {
         
         res.render('product/details', { product, isOwner, isPrefer, title: 'TechStore - Laptop Details' });
     } catch (error) {
-        return res.render('product/details', { error: createErrorMsg(error) });
+        return res.render('product/details', { title: 'TechStore - Laptop Details', error: createErrorMsg(error) });
     }
 });
 
@@ -54,7 +54,7 @@ router.get('/:productId/delete', isAuth, checkOwner, async (req, res) => {
         await productService.remove(productId);
         res.redirect('/device/catalog');
     } catch (error) {
-        return res.render('product/details', { error: createErrorMsg(error) });
+        return res.render('404', { title: 'TechStore - Page Not Found', error: createErrorMsg(error) });
     }
 });
 
@@ -66,7 +66,7 @@ router.get('/:productId/edit', isAuth, checkOwner, async (req, res) => {
     
         res.render('product/edit', { product, title: 'TechStore - Edit Product' });
     } catch (error) {
-        return res.render('product/edit', { error: createErrorMsg(error) });
+        return res.render('product/edit', { title: 'TechStore - Edit Product', error: createErrorMsg(error) });
     }
 });
 
@@ -78,7 +78,7 @@ router.post('/:productId/edit', isAuth, checkOwner, async (req, res) => {
         await productService.edit(productId, product);
         res.redirect(`/device/${productId}/details`);
     } catch (error) {
-        return res.render('product/edit', { product, error: createErrorMsg(error) });
+        return res.render('product/edit', { product, title: 'TechStore - Edit Product',  error: createErrorMsg(error) });
     }
 });
 
@@ -91,7 +91,7 @@ router.get('/:productId/prefer', isAuth, checkNotOwner, async (req, res) => {
 
         res.redirect(`/device/${productId}/details`);
     } catch (error) {
-        return res.render(`product/details`, { error: createErrorMsg(error) });
+        return res.render(`404`, { title: 'TechStore - Page Not Found', error: createErrorMsg(error) });
     }
 });
 

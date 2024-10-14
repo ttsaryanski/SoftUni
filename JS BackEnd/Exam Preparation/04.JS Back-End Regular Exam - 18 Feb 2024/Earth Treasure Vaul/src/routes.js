@@ -11,7 +11,7 @@ routes.use('/item', itemControler);
 routes.use('/auth', authController);
 
 routes.use('*', (req, res) => {
-    res.render('404', { title: '404 Page'});
+    res.render('404', { title: '404 Page' });
 })
 
 export default routes;

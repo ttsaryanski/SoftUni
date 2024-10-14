@@ -11,12 +11,12 @@ router.get('/', async (req, res) => {
     
         res.render('home', { items, title: 'Home Page' });  
     } catch (error) {
-        return res.render('home', { error: createErrorMsg(error) });
+        return res.render('home', { title: 'Home Page', error: createErrorMsg(error) });
     }
 });
 
 // router.get('/about', (req, res) => {
-//     res.render('home/about', { title: '' });
+//     res.render('home/about', { title: 'Please change here!!!' });
 // });
 
 // router.get('/profile', async (req, res) => {
@@ -26,9 +26,9 @@ router.get('/', async (req, res) => {
 //         const createdItems = await itemService.getMyItem(userId).lean();
 //         const likedItems = await itemService.getMyLikes(userId).lean();
         
-//         res.render('home/profile', { createdItems, likedItems, title: '' });
+//         res.render('home/profile', { createdItems, likedItems, title: 'Please change here!!!' });
 //     } catch (error) {
-//         return res.render('home/profile', { error: createErrorMsg(error) });
+//         return res.render('home/profile', { title: 'Please change here!!!', error: createErrorMsg(error) });
 //     }
 // });
 

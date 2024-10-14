@@ -14,7 +14,7 @@ router.post('/register', isGuest, async (req, res) => {
     const { name, email, password, rePassword } = req.body;
 
     if (rePassword !== password) {
-        return res.render('auth/register', { name, email, error: 'Password missmatch!' });
+        return res.render('auth/register', { name, email, title: 'Register - Home Cooking Recipes', error: 'Password missmatch!' });
     }
 
     try {
@@ -25,12 +25,12 @@ router.post('/register', isGuest, async (req, res) => {
 
         res.redirect('/');
     } catch (error) {
-        return res.render('auth/register', { name, email, error: createErrorMsg(error) });
+        return res.render('auth/register', { name, email, title: 'Register - Home Cooking Recipes', error: createErrorMsg(error) });
     }
 });
 
 router.get('/login', isGuest, (req, res) => {
-    res.render('auth/login', { title: 'Home Cooking Recipes' });
+    res.render('auth/login', { title: 'Login - Home Cooking Recipes' });
 });
 
 router.post('/login', isGuest, async (req, res) => {
@@ -42,7 +42,7 @@ router.post('/login', isGuest, async (req, res) => {
         
         res.redirect('/');
     } catch (error) {
-        return res.render('auth/login', { email, error: createErrorMsg(error)});
+        return res.render('auth/login', { email, title: 'Login - Home Cooking Recipes', error: createErrorMsg(error)});
     }
 });
 

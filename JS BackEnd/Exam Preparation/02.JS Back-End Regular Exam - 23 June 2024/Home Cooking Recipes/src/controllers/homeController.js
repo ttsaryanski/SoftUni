@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
     
         res.render('home', { items, title: 'Home Cooking Recipes' });  
     } catch (error) {
-        return res.render('home', { error: createErrorMsg(error) });
+        return res.render('home', { title: 'Home Cooking Recipes', error: createErrorMsg(error) });
     }
 });
 

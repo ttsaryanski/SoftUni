@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     
         res.render('home', { products, title: 'TechStore - Laptops and Computers' });    
     } catch (error) {
-        return res.render('home', { error: createErrorMsg(error) });
+        return res.render('home', { title: 'TechStore - Laptops and Computers', error: createErrorMsg(error) });
     }
 });
 
@@ -27,7 +27,7 @@ router.get('/profile', async (req, res) => {
         
         res.render('home/profile', { createdProducts, preferedProducts, title: 'TechStore - Profile' });
     } catch (error) {
-        return res.render('home/profile', { error: createErrorMsg(error) });
+        return res.render('home/profile', { title: 'TechStore - Profile', error: createErrorMsg(error) });
     }
 });
 
