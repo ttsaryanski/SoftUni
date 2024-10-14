@@ -14,7 +14,11 @@
             <form method="post">
                 <label>Platform:</label>
                 <select id="platform" name="platform">
+                    {{#if item}}
                     <option value="{{item.platform}}">{{item.platform}}</option>
+                    {{else}}
+                    <option value="">-------</option>
+                    {{/if}}
                     <option value="PC">PC</option>
                     <option value="Nintendo">Nintendo</option>
                     <option value="PS4">PS4</option>

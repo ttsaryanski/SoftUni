@@ -14,7 +14,9 @@
             <input type="text" id="image" name="imageUrl" value="{{item.imageUrl}}" placeholder="http://...">
             <label>Volcano Type:</label>
             <select id="type" name="type">
+                {{#if item}}
                 <option value="{{item.type}}">{{item.type}}</option>
+                {{/if}}
                 <option value="Supervolcanoes">Supervolcanoes</option>
                 <option value="Submarine">Submarine</option>
                 <option value="Subglacial">Subglacial</option>
