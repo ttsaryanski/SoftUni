@@ -11,7 +11,7 @@ export const createErrorMsg = (err, sessionError) => {
             errorMsg =  Object.values(err.errors).map(err => err.message).join(', ');
             break;
         case 'CastError':
-            errorMsg = 'Please select Cast';
+            errorMsg = 'Missing or invalid data!';
             break;
         case 'MongooseError':
             errorMsg = 'Server is busy, please try again later!';
