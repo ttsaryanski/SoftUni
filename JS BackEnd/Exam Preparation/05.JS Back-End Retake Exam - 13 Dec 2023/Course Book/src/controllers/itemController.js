@@ -3,7 +3,7 @@ import { Router } from "express";
 import itemService from "../services/itemService.js";
 import authService from "../services/authService.js";
 import { isAuth } from "../middlewares/authMiddleware.js";
-import { checkOwner, checkNotOwner } from '../middlewares/ownerMiddleware.js';
+import { checkOwner, checkNotOwner, checkIsLiked } from '../middlewares/checkUserPermission.js';
 import { createErrorMsg } from "../utils/errorUtil.js";
 
 const router = Router();
@@ -95,7 +95,7 @@ router.post('/:itemId/edit', isAuth, checkOwner, async (req, res) => {
     }
 });
 
-router.get('/:itemId/like', isAuth, checkNotOwner, async (req, res) => {
+router.get('/:itemId/like', isAuth, checkNotOwner, checkIsLiked, async (req, res) => {
     const itemId = req.params.itemId;
     const userId = req.user?._id;
 
