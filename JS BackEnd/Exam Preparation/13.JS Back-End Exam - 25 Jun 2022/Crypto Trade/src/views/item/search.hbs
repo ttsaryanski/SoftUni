@@ -1,0 +1,37 @@
+{{#if error}}
+<div>
+    <div class="errorContainer">
+        <p>{{error}}</p>
+    </div>
+</div>
+{{/if}}
+
+<section class="crypto-search">
+    <h1>Search</h1>
+
+    <form class="search-form" method="get">
+        <input type="text" class="search-coin" name="name" value="{{query.name}}" placeholder="Search here...">
+        <select id="payment" name="paymentMethod">
+            <option value="{{query.paymentMethod}}">{{query.paymentMethod}}</option>
+            <option value="Crypto Wallet">Crypto Wallet</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="PayPal">PayPal</option>
+        </select>
+        <button type="submit" class="btn-search">Search</button>
+    </form>
+
+    <div class="search-result">
+        {{#if items}}
+            <div class="search-list">
+            {{#each items}}
+                {{>item}}
+            {{/each}}
+        </div>
+        {{else}}
+            <div class="no-match">
+                <p>No match was found!</p>
+            </div>
+        {{/if}}
+    </div> 
+</section>
