@@ -35,7 +35,7 @@ const downLike = (itemId, userId) => Item.findByIdAndUpdate(itemId, { $addToSet:
 
 const getMyLikes = (userId) => Item.find({ usersList:  userId });
 
-const getAllByIds = (ids) => Item.find({ _id: { $in: ids } }). populate('autor');
+const getAllByIds = (ids) => Item.find({ _id: { $in: ids } }).populate('autor');
 
 export default {
     getAll,
