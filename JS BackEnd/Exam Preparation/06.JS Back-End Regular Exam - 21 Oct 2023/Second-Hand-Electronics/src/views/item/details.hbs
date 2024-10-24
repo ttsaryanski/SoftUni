@@ -1,0 +1,30 @@
+<section id="detailsPage">
+    <div id="detailsInfo">
+        <h1>Name: {{item.name}}</h1>
+        <div class="info"><img src="{{item.imageUrl}}" alt="{{item.name}}"></div>
+
+        <div class="info">
+            <h3>Type: {{item.type}}</h3>
+            <h3>Year of Production: {{item.production}}</h3>
+            <h3>Years of Exploitation: {{item.exploitation}}</h3>
+            <h3>Damages: {{item.damages}}</h3>
+            <h3>Description: {{item.description}}</h3>
+            <h2>Price: ${{item.price}}</h2>
+        </div>
+
+        {{#if isAuthenticated}}
+        <div class="buttons">
+            {{#if isOwner}}
+            <a href="/item/{{item._id}}/edit" class="edit-btn">Edit</a>
+            <a href="/item/{{item._id}}/delete" class="delete-btn">Delete</a>
+            {{else}}
+            {{#if isLiked}}
+                <p><span class="buy">Thank You For Your Purchase</span></p>
+            {{else}}
+                <a href="/item/{{item._id}}/like" class="buy-btn">Buy</a>
+            {{/if}}
+            {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</section>
