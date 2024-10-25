@@ -15,7 +15,8 @@ const authMiddleware = async (req, res, next) => {
         const user = {
             _id: decodedToken._id,
             email: decodedToken.email,
-            name: decodedToken.name
+            firstName: decodedToken.firstName, 
+lastName: decodedTocen.lastName
         };
 
         req.user = user;
