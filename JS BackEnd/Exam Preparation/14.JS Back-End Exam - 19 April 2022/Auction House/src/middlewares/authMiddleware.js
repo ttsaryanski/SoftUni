@@ -22,7 +22,8 @@ lastName: decodedTocen.lastName
         req.user = user;
         req.isAuthenticated = true;
         res.locals.userId = user._id;
-        res.locals.userName = user.name;
+        res.locals.userFirsttName = user.firstName;
+res.locals.userLastName = user.lastName;
         res.locals.userEmail = user.email;
         res.locals.isAuthenticated = true;
         
