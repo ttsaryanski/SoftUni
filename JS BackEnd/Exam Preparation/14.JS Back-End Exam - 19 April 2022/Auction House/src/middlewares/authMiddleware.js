@@ -16,13 +16,13 @@ const authMiddleware = async (req, res, next) => {
             _id: decodedToken._id,
             email: decodedToken.email,
             firstName: decodedToken.firstName, 
-lastName: decodedTocen.lastName
+lastName: decodedToken.lastName
         };
 
         req.user = user;
         req.isAuthenticated = true;
         res.locals.userId = user._id;
-        res.locals.userFirsttName = user.firstName;
+        res.locals.userFirstName = user.firstName;
 res.locals.userLastName = user.lastName;
         res.locals.userEmail = user.email;
         res.locals.isAuthenticated = true;
