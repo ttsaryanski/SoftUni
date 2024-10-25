@@ -1,0 +1,61 @@
+<section id="catalog-section">
+    <h1 class="item">
+        {{item.title}}
+        {{#if isOwner}}
+        <div class="f-right">
+            <a class="action pad-small f-left" href="/item/{{item._id}}/edit">Edit</a>
+            <a class="action pad-small f-left" href="/item/{{item._id}}/delete">Delete</a>
+        </div>
+        {{/if}}
+    </h1>
+    <div class="item padded">
+
+        <div class="layout right large">
+
+            <div class="col">
+                <img src="{{item.imageUrl}}" alt="{{item.title}}" class="img-large">
+            </div>
+
+            <div class="content pad-med">
+
+                <p>In category: <strong>{{item.category}}</strong></p>
+                <p>{{item.description}}</p>
+
+                <div class="align-center">
+                    <div>
+                        Current price: $<strong>{{item.price}}</strong>
+                    </div>
+
+                    {{#if isAuthenticated}}
+                    {{#if isOwner}}
+                    <div>
+                        {{#if item.usersList}}
+                        Bid by <strong>{{item.usersList.firstName}} {{item.usersList.lastName}}</strong>
+                        <a class="action pad-med cta" href="/item/{{item._id}}/close">Close Auction</a>
+                        {{else}}
+                        No bids
+                        {{/if}}
+                    </div>
+                    {{else}}
+                    {{#if isLiked}}
+                        <div>
+                            You are currently the <strong>highest bidder</strong> for this auction
+                        </div>
+                    {{else}}
+                        <form class="vertical" method="post">
+                            <label><span>Bid amount</span><input type="number" name="price" value="{{newPrice}}"></label>
+                            <input class="action" type="submit" value="Place bid">
+                        </form>
+                    {{/if}}
+                    {{/if}}
+                    {{/if}}
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer>Listed by {{item.owner.firstName}} {{item.owner.lastName}}</footer>
+    </div>
+
+</section>

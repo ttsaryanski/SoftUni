@@ -1,0 +1,17 @@
+<section id="catalog-section" class="spaced">
+
+    <h1 class="item">Closed Auctions</h1>
+
+    {{#if closedItems}}
+    <ul class="catalog cards">
+        {{#each closedItems}}
+            {{>profileItem}}
+        {{/each}}
+    </ul>
+    {{else}}
+    <!-- If the current user doesn't have closed auctions -->
+    <div class="item pad-large align-center">
+        <p>You haven't closed any auctions yet.</p>
+    </div>
+    {{/if}}
+</section>
