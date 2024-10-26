@@ -53,7 +53,7 @@ router.get('/:itemId/details', async (req, res) => {
     }
 });
 
-router.post('/:itemId/details', async (req, res) => {
+router.post('/:itemId/details', checkIsLiked, async (req, res) => {
     const itemId = req.params.itemId;
     const userId = req.user?._id;
     const item = req.body;

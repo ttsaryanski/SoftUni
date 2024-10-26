@@ -31,7 +31,8 @@ const checkIsLiked = async (req, res, next) => {
     const userId = req.user?._id;
 
     const item = await itemService.getById(itemId).lean();
-    if (!item.usersList._id == userId) {
+    
+    if (!(item.usersList && item.usersList._id == userId)) {
         return next();
     }
     req.session.error = 'You have already performed this action!';
