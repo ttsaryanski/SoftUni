@@ -1,0 +1,27 @@
+<div class="planet-details">
+    <img src="{{item.imageUrl}}" alt="{{item.name}}" class="planet-image">
+    <div class="planet-info">
+        <h2>Name: {{item.name}}</h2>
+        <p><strong>Age:</strong> {{item.age}} billion years</p>
+        <p><strong>Solar System:</strong> {{item.solarSystem}}</p>
+        <p><strong>Type:</strong> {{item.type}}</p>
+        <p><strong>Moons:</strong> {{item.moons}}</p>
+        <p><strong>Size:</strong> {{item.size}} km</p>
+        <p><strong>Rings:</strong> {{item.rings}}</p>
+        <p><strong>Description:</strong> {{item.description}}</p>
+    </div>
+    {{#if isAuthenticated}}
+    <div class="actions">
+        {{#if isOwner}}
+        <a class="edit-btn" href="/item/{{item._id}}/edit">Edit</a>
+        <a class="delete-btn" href="/item/{{item._id}}/delete">Delete</a>
+        {{else}}
+        {{#if isLiked}}
+        <p id="liked-message" class="liked-message hidden">You've already liked this planet.</p>
+        {{else}}
+        <a id="like-button" class="like-btn" href="/item/{{item._id}}/like">Like</a>
+        {{/if}}
+        {{/if}}
+    </div>
+    {{/if}}
+</div>
