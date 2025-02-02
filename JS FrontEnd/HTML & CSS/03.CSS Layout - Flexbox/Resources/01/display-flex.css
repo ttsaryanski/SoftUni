@@ -1,0 +1,18 @@
+h1 {
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 0.5em;
+}
+
+.flex-container {
+    box-sizing: content-box;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+}
+
+.flex-item {
+    background: #eee;
+    padding: 20px;
+    border: 2px solid #000;
+}

@@ -1,0 +1,76 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.button {
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.8em;
+    background-color: #d8d8d9;
+    width: 7em;
+    padding: 1em;
+    text-align: center;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    margin-right: 0.9em;
+}
+
+.button i {
+    margin-right: 0.3em;
+    color: #333;
+    pointer-events: none;
+    color: inherit;
+}
+
+div :nth-child(3) {
+    background-color: #fcb000;
+}
+
+div :nth-child(4) {
+    background-color: #f6fdc6;
+    border: 1px solid #e7eacf;
+}
+
+div :nth-child(5) {
+    background-color: #ffffff;
+    border: 1px solid #e7eacf;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+div :nth-child(3):hover {
+    background-color: #fcb000;
+    border: 1px solid #8d8b8b;
+}
+
+div :nth-child(4):hover {
+    background-color: #cdc6fd;
+    border: 1px solid #a2a2a7;
+}
+
+div :nth-child(5):hover {
+    background-color: #d8d8d9;
+    border: 1px solid #acacac;
+}
+
+div :last-child:hover {
+    background-color: transparent;
+    color: #aaaaaa;
+    border: 1px solid #8d8b8b;
+}
+
+a.button:active, button.button:active {
+    background-color: crimson; 
+}

@@ -1,0 +1,25 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 2em;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+a {
+    display: block;
+    background-color: #ebebec;
+    color: black;
+    width: 3em;
+    line-height: 3em;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 50%;
+}

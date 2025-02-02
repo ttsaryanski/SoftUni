@@ -1,0 +1,30 @@
+h1, h2, p {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header, section, footer {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}

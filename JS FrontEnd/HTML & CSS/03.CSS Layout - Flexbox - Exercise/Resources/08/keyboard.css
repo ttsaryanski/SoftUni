@@ -1,0 +1,86 @@
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard {
+    background-color: #ddd;
+    margin: 5em auto;
+    border: 1px solid #999;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3em 0.3em 0 rgb(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.row {
+    display: flex;
+    gap: 1em;
+}
+
+p {
+    display: block;
+    padding: 1em 1.8em;
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #888;
+    border-radius: 0.3em;
+    text-align: center;
+    box-shadow: 0 0.3em 0.3em 0 rgb(0, 0, 0, 0.3);
+    position: relative;
+}
+
+p:active {
+    top: 2px;
+    box-shadow: 0 0.5em 0.5em 0 #bbb;
+}
+
+.special-button {
+    background-color: #eee;
+}
+
+.grow {
+    flex: 1 1 auto;
+}
+
+.long {
+    flex-basis: 7em;
+}
+
+.enter {
+    position: relative;
+    border-bottom-right-radius: 0;
+}
+
+.enter::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3.4em;
+    right: -1px;
+    width: 6.5em;
+    height: 4.8em;
+    background-color: #eee;
+    border: 1px solid #888;
+    border-radius: 0.3em;
+    box-shadow: inherit;
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.special-button.test {
+    flex-shrink: 1;
+    flex-basis: 6em;
+}
+
+
+
+
+
+

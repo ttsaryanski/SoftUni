@@ -1,0 +1,27 @@
+nav ul li a {
+    text-decoration: none;
+}
+
+ul > li:first-child {
+    font-weight: bold;
+}
+
+ul > li:last-child {
+    font-style: italic;
+}
+
+article h2.first::before {
+    content: ">> ";
+    color:  rgb(201, 20, 20);
+    font-weight: bolder;
+}
+
+article h2.first::after {
+    content: " <<";
+    color: rgb(201, 20, 20);
+    font-weight: bolder;
+}
+
+div > p {
+    background-color: lightblue;
+}

@@ -1,0 +1,54 @@
+nav ul {
+    display: flex;
+    gap: 1em;
+    font-size: 14px;
+}
+
+nav ul li, 
+nav ul li a {
+    display: block;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li:hover > ul {
+    min-width: 20ch;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 0.5em;
+    top: 100%;
+    left: 0;
+
+    background-color: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 0.5em;
+}
+
+nav ul li a {
+    padding: 0.7em 1.5em;
+    background: #369;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.3em;
+}
+
+nav ul li:hover > a,
+nav ul li a:hover {
+    background-color: lightblue;
+    color: #000;
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul ul li:hover > ul {
+    left: initial;
+    right: 100%;
+    top: -0.5em;
+}

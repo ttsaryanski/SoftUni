@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: Lato, serif;
+    font-size: 12px;
+}
+
+.container {
+    max-width: 80dvw;
+    margin: 3em auto;
+    display: flex;
+    gap: 2em;
+}
+
+main {
+    flex: 0 1 70%;
+}
+
+aside {
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    background-color: #fff;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.2);
+    padding: 2em;
+    border-radius: 0.3em;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+article + article {
+    margin-top: 2em;
+}
+
+div.avatar {
+    flex-shrink: 0;
+    width: 8em;
+    aspect-ratio: 1/1;
+    background-color: #3e9f00;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    border: 4px solid #fff;
+}
+
+div.content {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+    position: relative;
+}
+
+div.content::before {
+    content: '"';
+    font-family: "Coiny", serif;
+    font-size: 6em;
+    line-height: 0.5em;
+    transform: rotate(180deg);
+    position: absolute;
+    top: -0.4em;
+}
+
+div.content h2 {
+    order: 100;
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+div.content p {
+    font-weight: 700;
+    padding-bottom: 1em;
+    color: #888;
+}
+
+aside article {
+    flex-direction: column;
+    align-items: start;
+    flex-grow: 1;
+}
+
+aside article div.avatar {
+    width: 6em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

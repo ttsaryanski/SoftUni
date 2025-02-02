@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font: 12px/1.5 Lato, serif;
+}
+
+.site {
+    background-color: #fff;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    padding: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1rem 0;
+}
+
+hr {
+    margin: 2em 0;
+    border: 1px solid #666;
+}
+
+.site p {
+    margin-bottom: 2em;
+}
+
+.site ul,
+.site ol {
+    margin-left: 2.5em;
+}
+
+.site ul {
+    margin-top: 0.5em;
+}
+
+ul li:last-child {
+    margin-bottom: 0.5em;
+}
+
+.site ol {
+    margin-bottom: 2em;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ul ul li {
+    list-style-type: disc;
+}
+
+ul ul ul li {
+    list-style-type: circle;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 0.3rem 0.5rem;
+}
+
+table thead th {
+    text-align: left;
+    background-color: #ccc;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+blockquote {
+    border-left: 2px solid #ddd;
+    margin-left: 2em;
+    padding-left: 2em;
+}
+
+blockquote p:last-child {
+    text-align: end;
+}
+
+.site footer > p {
+    margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+	html { font-size: 14px; }
+}
+
+@media (min-width: 900px) {
+	html { font-size: 16px; }
+}
+
+@media (min-width: 1200px) {
+	html { font-size: 18px; }
+}
+

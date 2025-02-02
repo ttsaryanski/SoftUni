@@ -1,0 +1,32 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body, h2, h3 {
+    font-family: inherit;
+}
+
+article {
+    border: 2px solid #e7e7e7;
+    border-radius: 0.3em;
+    width: 80%;
+    margin: 2em auto;
+    padding: 2em;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+footer p {
+    font-style: italic;
+}
+
+footer time {
+    font-weight: bold;
+}

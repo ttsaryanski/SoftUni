@@ -1,0 +1,39 @@
+div.site {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.3);
+    border-radius: 0.3em;
+}
+
+div.site > header,
+div.site > footer {
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    padding: 2em;
+}
+
+div.site > section main,
+div.site > section aside {
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    padding: 1.5em;
+    margin: 1em 0;
+}
+
+@media (min-width: 800px) {
+    div.site > section {
+        display: flex;
+        gap: 1em;
+    }
+
+    div.site > section aside {
+        flex-basis: 250px;
+    }
+    
+    div.site > section main {
+        flex-basis: 250px;
+        flex-grow: 1;
+    }
+}

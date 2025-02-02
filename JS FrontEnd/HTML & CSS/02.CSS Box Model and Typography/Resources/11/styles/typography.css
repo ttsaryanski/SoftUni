@@ -1,0 +1,106 @@
+html {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, serif;
+    line-height: 1.2;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+	font-size: 2.2rem;
+}
+
+h2 {
+	font-size: 2.0rem;
+}
+
+h3 {
+	font-size: 1.8rem;
+}
+
+h4 {
+	font-size: 1.6rem;
+}
+
+h5 {
+	font-size: 1.4rem;
+}
+
+h6 {
+	font-size: 1.2rem;
+}
+
+hr {
+	margin: 2rem 0;
+}
+
+p {
+    padding-bottom: 1.5rem;
+}
+
+article > ul, ol {
+    margin-bottom: 0.5rem;
+}
+
+ul, ol {
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+ul ul {
+    padding-top: 0.5rem;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+ul ul li {
+    list-style-type: disc;
+}
+
+ul ul ul li {
+    list-style-type: circle;
+}
+
+blockquote {
+    border-left: 4px solid #d8d8d9;
+    font-style: italic;
+    margin: 0 0 1.5rem 2rem;
+	padding: 1rem 2rem;
+    position: relative;
+}
+
+blockquote .author {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border: 1px solid #c5c5c5;
+    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table td, table th {
+    border: 1px solid #c5c5c5;
+    padding: 0.3rem 0.5rem;
+}
+
+table th {
+    text-align: left;
+    background-color: #c5c5c5;
+}
+
+table tr:nth-child(odd) {
+    background-color: #efeff0;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Lato', serif;
+    display: flex;
+    min-height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 60em;
+    margin: auto;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.section::after,
+.section li {
+    flex: 1 1 300px;
+    display: block;
+    background-color: #fff;
+    padding: 1.5em 2em;
+    padding-right: 3em;
+    border-radius: 0.5em;
+    box-shadow: -0.2em 0.2em 0.1em 0 rgb(0, 0, 0, 0.1);
+    counter-increment: section;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.section::after {
+    content: '';
+    display: block;
+    background: transparent;
+    box-shadow: none;
+}
+
+.section li::before {
+    content: '0' counter(section);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4em;
+    height: 3em;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 0.5em;
+    z-index: 10;
+}
+
+.section li::after {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4em;
+    height: 3em;
+    background-color: #eee;
+    font-weight: bold;
+    position: absolute;
+    top: 0.2em;
+    right: 0.2em;
+    border-bottom-left-radius: 0.5em;
+    z-index: 1;
+}
+
+li span,
+li p {
+    display: block;
+}
+
+li span {
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+li p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 0.1em;
+}

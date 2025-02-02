@@ -1,0 +1,36 @@
+h1, h2 {
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 0.5em;
+    padding-top: 0;
+}
+
+.flex-container {
+    box-sizing: content-box;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+    margin-bottom: 0.6em;
+}
+
+.flex-item {
+    background: #eee;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}

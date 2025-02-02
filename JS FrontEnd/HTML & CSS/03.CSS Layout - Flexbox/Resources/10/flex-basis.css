@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 0.5em;
+    padding-top: 0;
+}
+
+.flex-container {
+    box-sizing: content-box;
+    width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    margin-bottom: 0.6em;
+
+    display: flex;
+}
+
+.flex-item {
+    background: #eee;
+    padding: 20px;
+    border: 2px solid #000;
+}
+
+.flex-basis-5em .flex-item {
+    flex-basis: 5em;
+}
+
+.flex-shrink-zero .flex-item {
+    flex-shrink: 0;
+}
+
+.flex-grow-one {
+    width: 900px;
+}
+
+.flex-grow-one .flex-item {
+    flex-grow: 1;
+}

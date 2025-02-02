@@ -1,0 +1,11 @@
+p time {
+    font-style: italic;
+}
+
+p span {
+    font-weight: bold;
+}
+
+header p {
+    color: #646973;
+}

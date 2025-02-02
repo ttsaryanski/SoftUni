@@ -1,0 +1,55 @@
+div {
+    border: 1px dashed #666;
+    margin: 2em;
+    position: relative;
+}
+
+div::before {
+    position: absolute;
+    top: 0.1em;
+    left: 0.6em;
+    content: '';
+}
+
+div.margin {
+    width: 30vw;
+    margin: 4em auto;
+    background-color: #fe9a5b;
+    overflow: hidden;
+}
+
+div.margin::before {
+    content: 'margin';
+}
+
+div.border {
+    width: auto;
+    height: auto;
+    background-color: #f8ebc2;
+    overflow: hidden;
+}
+
+div.border::before {
+    content: 'border';
+}
+
+div.padding {
+    width: auto;
+    height: auto;
+    background-color: #9af16f;
+    overflow: hidden;
+}
+
+div.padding::before {
+    content: 'padding';
+}
+
+div.content {
+    width: auto;
+    height: auto;
+    background-color: #b1d0e5;
+    text-align: center;
+    padding: 2em 0;
+    overflow: hidden;
+}
+

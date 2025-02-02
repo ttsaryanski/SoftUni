@@ -1,0 +1,37 @@
+ul {
+    list-style-type: none;
+}
+
+section p {
+    color: #384f4f;
+}
+
+.highlighted + article {
+    background-color: #dd8280;
+}
+
+li {
+    font-weight: bold;
+    padding: 4px 0 4px 0;
+}
+
+.spec-li > a {
+    color: #220088;
+    text-decoration: none;
+}
+
+h2 ~ p {
+    color: #6554ed;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#green {
+    color: #328500;
+}
+
+ul > li:nth-child(2) {
+    color: #e76a42;
+}

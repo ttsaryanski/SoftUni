@@ -1,0 +1,40 @@
+p.highlight {
+    color: blue;
+    font-size: 18px;
+}
+
+div#special-content {
+    background-color: rgb(240, 211, 21);
+    padding: auto;
+}
+
+ul li {
+    font-size: 18px;
+}
+
+.important {
+    color: rgb(10, 141, 158);
+}
+
+#italic.important {
+    font-style: italic;
+    color: red;
+}
+
+a {
+    color: orange;
+    font-weight: bold;
+}
+
+a[href^="http"] {
+    border-bottom: 1px solid orange;
+}
+
+.spec.violet {
+    color: rgb(174, 29, 174);
+}
+
+div ~ p {
+    font-weight: bold;
+}
+
