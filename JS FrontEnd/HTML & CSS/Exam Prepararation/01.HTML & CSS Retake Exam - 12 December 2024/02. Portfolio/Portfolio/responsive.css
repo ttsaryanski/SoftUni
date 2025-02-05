@@ -1,0 +1,46 @@
+@media (max-width: 600px) {
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-fluid nav ul {
+        display: none;
+    }
+
+    .checkbtn {
+        display: block;
+        order: 1;
+        margin-right: 0.5em;
+    }
+
+    section.site-header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .site-header > i {
+        left: 0;
+    }
+
+    section.about {
+        display: flex;
+    }
+
+    section.about .about-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery-item {
+        display: block;
+    }
+}
