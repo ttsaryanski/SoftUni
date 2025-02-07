@@ -1,0 +1,23 @@
+input {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    outline: none;
+}
+
+input:focus {
+    border-color: #090;
+}
+
+select {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    background-color: #eee;
+}
+
+select option {
+    background-color: #fff;
+}

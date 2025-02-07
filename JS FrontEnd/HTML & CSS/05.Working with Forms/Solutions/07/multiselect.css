@@ -1,0 +1,20 @@
+input {
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    outline: none;
+}
+
+input:focus {
+    border-color: #090;
+}
+
+select {
+    display: block;
+    min-width: 20ch;
+    min-height: 20ch;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+}
