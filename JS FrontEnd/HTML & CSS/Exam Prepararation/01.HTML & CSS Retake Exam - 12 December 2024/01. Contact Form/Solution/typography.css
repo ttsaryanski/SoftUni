@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+    font: 14px/1.5 'Source Sans 3', sans-serif;
+}
+
+body, input, textarea, select, option button {
+    font: inherit;
+}

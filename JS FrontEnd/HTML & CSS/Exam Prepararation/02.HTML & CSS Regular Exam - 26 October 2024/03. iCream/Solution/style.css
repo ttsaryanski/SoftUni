@@ -1,0 +1,288 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(layouts.css);
+
+header {
+    padding-top: 1em;
+    background-color: #e293b6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    position: relative;
+    padding-bottom: 2.2em;
+}
+
+.navigation {
+    position: absolute;
+    bottom: -1.5em;
+}
+
+header ul li {
+    display: inline-block;
+}
+
+.helper li:not(:first-child) {
+    border-left: 1px solid #fff;
+    margin-left: 1em;
+    padding-left: 1em;
+}
+
+.socials li:not(:first-child) {
+    padding-left: 2em;
+}
+
+header ul li a {
+    display: block;
+    color: #fff;
+}
+
+nav {
+    background-color: #fff;
+    border-radius: 5em;
+    position: relative;
+}
+
+nav h2 {
+    display: block;
+    position: absolute;
+    font-size: 2em;
+    line-height: 1;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    color: #e293b6;
+}
+
+nav h2 span {
+    color: #85beec;
+}
+
+nav ul,
+.footer-socials {
+    display: flex;
+    width: 60vw;
+    gap: 1.5em;
+    padding: 1em 6em;
+}
+
+nav ul li:nth-child(3) {
+    margin-right: auto;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size:0.8em;
+    font-weight: bold;
+}
+
+main {
+    padding-block: 12vh;
+    background-image: url('images/carousel-1.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.main-content {
+    width: 60vw;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.main-content * {
+    margin: 0.3em;
+}
+
+.main-content h1 {
+    font-size: 4.5em;
+    line-height: 1.1;
+}
+
+.main-content h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.main-content button {
+    background-color: #e293b6;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    padding: 0.8em 2em;
+    border-radius: 5em;
+}
+
+aside {
+    background-color: #d1e5fb;
+    text-align: center;
+    padding: 3em;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+}
+
+.aside h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+aside hr {
+    color: #e293b6;
+    border: 2px solid #e293b6;
+    width: 10ch;
+    margin-bottom: 1em;
+}
+
+aside section {
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 1.5em;
+}
+
+.aside-content {
+    text-align: left;
+    flex: 1 1 20ch;
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-content h4 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.aside .head {
+    font-weight: bold;
+    opacity: 0.8;
+    margin-bottom: 1em;
+}
+
+.aside-content img {
+    width: 100%;
+    height: 100%;
+}
+
+.aside-content p {
+    font-size: 0.8em;
+}
+
+.aside-content button {
+    margin-top: 1.5em;
+    align-self: flex-start;
+    background-color: #85beec;
+    color: #fff;
+    border: none;
+    padding: 0.6em 1.4em;
+    border-radius: 2em;
+}
+
+.aside-content:last-child button {
+    background-color: #e293b6;
+}
+
+.aside-content:last-child span {
+    font-weight: bold;
+    font-size: 0.8em;
+    margin-top: 1.8em;
+}
+
+.aside-content:last-child span i {
+    color: #89bfec;
+    margin-right: 0.8em;
+}
+
+.footer-content {
+    width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content h2 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    color: #e293b6;
+}
+
+.footer-content h2 span {
+    color: #85beec;
+}
+
+.footer-content ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.footer-socials li {
+    display: inline-block;
+}
+
+.footer-socials li a {
+    display: block;
+    border: 1px solid #85beec;
+    color: #85beec;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.footer-contacts {
+    display: flex;
+    width: 50%;
+    gap: 1em;
+}
+
+.footer-contacts div {
+    color: #555;
+}
+
+.footer-contacts div h6 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.footer-contacts div span {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #a7a7a7;
+    font-size: 0.9em;
+}
+
+.footer-contacts div:last-child {
+    border-left: 1px solid #555;
+    padding-left: 1em;
+}
+
+.footer-contacts div:first-child {
+    text-align: right;
+    
+}
+
+.footer-content > span {
+    margin: 2em;
+    margin-bottom: 4em;
+    color: #a7a7a7;
+}
+
+.footer-content > span strong {
+    color: #e293b6;
+    font-weight: 100;
+}

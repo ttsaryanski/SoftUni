@@ -1,0 +1,113 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(layouts.css);
+
+body {
+    color: #585858;
+}
+
+.site {
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+}
+
+.site main {
+    flex-grow: 3;
+}
+
+.site h2 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 4px;
+}
+
+.site main h2 {
+    margin-bottom: 2em;
+    
+}
+
+form {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.field {
+    margin-bottom: 0.8em;
+    flex-grow: 1;
+    flex-basis: 15em;
+}
+
+.field label {
+    display: none;
+}
+
+.field input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cacacb;
+    outline: none;
+    background-color: transparent;
+}
+
+main button {
+    background-color: #585858;
+    color: #fff;
+    border-radius: 0.2em;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 1.2em 1.8em;
+    border: none;
+    margin-top: 1.2em;
+}
+
+aside h2 {
+    margin-bottom: 1em;
+}
+
+aside ul li,
+aside ul li a {
+    display: block;
+}
+
+aside ul {
+    display: flex;
+    gap: 0.3em;
+    flex-wrap: wrap;
+}
+
+aside ul li {
+    border: 1px solid #cacacb;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    flex: 0 0 3.6em;
+    text-align: center;
+}
+
+aside ul li a {
+    color: #585858;
+}
+
+footer {
+    width: 50vw;
+    margin-top: 2em;
+    display: flex;
+    gap: 2em;
+    font-size: 1em;
+}
+
+footer p {
+    opacity: 0.5;
+}
+
+footer p span {
+    text-decoration: underline;
+    color: #111;
+    font-weight: 500;
+}
