@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/_styles.css">
+    <link rel="stylesheet" href="registration.css">
+    <title>Task 05</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registration</h2>
+
+        <fieldset>
+            <legend>Login information</legend>
+
+            <form action="#">
+
+                <div class="field">
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                    <label for="email">Email</label>
+                    <span class="helper">example: mongoose@globcom.net</span>
+                </div>
+    
+                <div class="field">
+                    <input type="password" name="password" id="password" placeholder="Password" />
+                    <label for="password">Password</label>
+                    <span class="helper">minimum 6ch, letters and numbers, at least 1 special character</span>
+                </div>
+        
+            </form>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional information</legend>
+
+            <form action="#">
+
+                <div class="field">
+                    <input type="date" name="date" id="date" placeholder="dd.mm.yyy" />
+                    <label for="date">Date of Birth</label>
+                    <span class="helper">example: 12/06/2002</span>
+                </div>
+
+            </form>
+
+        </fieldset>
+
+        <button>Login</button>
+        
+    </div>
+    
+</body>
+</html>

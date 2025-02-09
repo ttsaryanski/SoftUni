@@ -1,0 +1,104 @@
+h2 {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #ccc;
+    display: inline-block;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    border-radius: 0.3em;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+input[type="text"]:user-invalid,
+input[type="email"]:user-invalid,
+input[type="password"]:user-invalid {
+    border-color: #c00;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: orange;
+}
+
+input[type="text"]:user-valid,
+input[type="email"]:user-valid,
+input[type="password"]:user-valid {
+    border-color: green;
+}
+
+.field {
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.field .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.field label {
+    order: -1;
+}
+
+.field input:required ~ label::after {
+    content: "*";
+    color: #c00;
+    margin-left: 0.3em;
+}
+
+.field input:user-invalid ~ .icon,
+.field input:user-invalid ~ label {
+    color: #c00;
+}
+
+.field input:focus ~ .icon,
+.field input:focus ~ label {
+    color: orange;
+}
+
+.field input:user-valid ~ .icon,
+.field input:user-valid ~ label {
+    color: green;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.3em;
+    padding: 0.8em 1em;
+}
+
+.field .helper {
+    display: block;
+    font-size: 0.85em;
+    font-weight: bold;
+    opacity: 0.5;
+    pad: 0.1em 0 0.2em 0;
+}
+
+.container {
+    width: 100vw;
+    max-width: 25em;
+}

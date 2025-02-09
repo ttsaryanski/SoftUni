@@ -1,0 +1,59 @@
+.container {
+    width: 80vw;
+    padding: 1em;
+    max-width: 60em;
+}
+
+form {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+form > * {
+    flex-grow: 1;
+}
+
+form > .field:nth-child(1) {
+    flex-basis: 10ch;
+}
+
+form > button:nth-child(3) {
+    flex-basis: 15ch;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+}
+
+input[type="text"],
+input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 0.8em 1.2em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: #eee;
+    line-height: 1;
+}
+
+.field {
+    padding: 0;
+    display: flex;
+}
+
+.field label {
+    display: none;
+}
+
+button {
+    display: block;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.3em;
+    padding: 0.8em 1.5em;
+}
