@@ -1,0 +1,255 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(layouts.css);
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    font-family: 'Playwrite PE';
+    color: #3f398a;
+}
+
+html button,
+html a {
+    font-family: 'Roboto';
+    color: #3f398a;
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav li,
+header nav li a {
+    display: block;
+}
+
+header nav ul li:not(:last-child) {
+    margin-right: 1em;
+}
+
+header nav li a {
+    text-decoration: none;
+}
+
+header nav li:first-child a {
+    color: #e54148;
+}
+
+header button {
+    background-color: #f0f0f1;
+    border: 2px solid #e54148;
+    padding: 0.6em 1.5em;
+    margin: 2em auto;
+    border-radius: 0.4em;
+}
+
+header button a {
+    display: block;
+    text-decoration: none;
+    color: #3f398a;
+    font-weight: bold;
+    line-height: 1;
+}
+
+aside {
+    margin: 0 5em;
+    display: flex;
+}
+
+.aside-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aside-content h1 {
+    color: #3f398a;
+    text-align: left;
+    font-weight: 400;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.aside-content p {
+    max-width: 80%;
+    font-size: 1em;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+.aside-content button {
+    box-shadow: 0 0.2em 0.6em 0 rgb(0, 0, 0, 0.3);
+    border: none;
+    font-size: 0.7em;
+    padding: 0.6em 1.4em;
+    border-radius: 2em;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+.aside-content .button button:first-child {
+    background-color: #e54148;
+    color: #fff;
+    margin-right: 1.5em;
+}
+
+aside .media {
+    max-width: 50%;
+}
+
+aside .media img {
+    width: 100%;
+}
+
+main,
+main .card,
+main .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card {
+    width: 100%;
+    box-shadow: 0 0.2em 0.2em 0 rgb(0, 0, 0, 0.1);
+    padding: 1.5em;
+    position: relative;
+}
+
+.card .media {
+    max-width: 20%;
+}
+
+.card .media img {
+    width: 100%;
+    height: auto;
+}
+
+.card .head {
+    max-width: 22%;
+    text-align: center;
+    margin: 1em 0;
+}
+.card .head h3 {
+    font-size: 1.6em;
+}
+
+.card .floating {
+    max-width: 15%;
+    position: absolute;
+    bottom: -8em;
+    left: -4em;
+}
+
+ main .card:nth-child(even) .floating {
+    left: auto;
+    right: -4em;
+}
+
+.card .floating img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-content {
+    max-width: 40%;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.main-content .content-media img {
+    width: 100%;
+    height: auto;
+}
+
+.form h4,
+.main-content h4 {
+    color: #e54148;
+    font-size: 0.7em;
+    margin: 3em 0 1em 0;
+}
+
+.form h2,
+.main-content h2 {
+    max-width: 50%;
+    font-size: 1.8em;
+    font-weight:500;
+    text-align: center;
+}
+
+.main-content p {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    width: 100%;
+    gap: 0.5em;
+}
+
+.form form input,
+.form form textarea {
+    background-color: #3f398a;
+    padding: 0.6em 1em;
+    border-radius: 1.2em;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.form form input::placeholder {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3f398a;
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+footer ul {
+    display: flex;
+    gap: 2em;
+    margin: 2em;
+}
+
+footer ul li,
+footer ul li a {
+    display: block;
+}
+
+footer span {
+    margin-bottom: 2em;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.6em;
+}
+

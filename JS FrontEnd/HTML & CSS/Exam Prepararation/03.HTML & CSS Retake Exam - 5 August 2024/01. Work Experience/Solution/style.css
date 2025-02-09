@@ -1,0 +1,110 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(layouts.css);
+
+body {
+    background-color: #fbf1e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000003;
+}
+
+.site {
+    display: flex;
+    width: 80vw;
+    gap: 1em;
+}
+
+aside,
+main {
+    box-shadow: 0 1em 2em 0 rgb(0, 0, 0, 0.4);
+    padding: 1em;
+}
+
+.site h2 {
+    font-weight: 200;
+    margin-bottom: 1.2em;
+}
+
+.site h4 {
+    opacity: 0.5;
+}
+
+.site .line {
+    width: 100%;
+    height: 1px;
+    background-color: #6183ef;
+    margin: 1em 0;
+}
+
+.site .line span {
+    display: none;
+}
+
+.site aside {
+    min-width: 30%;
+}
+
+.site aside li {
+    display: block;
+    color: #6183ef;
+    margin: 1em 0;
+}
+
+.site aside span {
+    margin-left: 0.8em;
+    color: #000003;
+    font-size: 1em;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience .percentage {
+    background-color: #6183ef;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 2em;
+    margin: 1em 0;
+}
+
+.experience .percentage.p90 {
+    width: 90%;
+}
+
+.experience .percentage.p80 {
+    width: 80%;
+}
+.experience .percentage.p75 {
+    width: 75%;
+}
+.experience .percentage.p50 {
+    width: 50%;
+}
+
+.site main {
+    padding-left: 2em;
+}
+
+.site main h2 {
+    text-align: center;
+    margin: 2em 0 1.5em 0;
+}
+
+.education span {
+    display: block;
+    color: #6183ef;
+    margin: 1em 0;
+}
+
+.education p {
+    font-size: 0.9em;
+}
+
+.education:last-child p {
+    margin-bottom: 1.5em;
+}

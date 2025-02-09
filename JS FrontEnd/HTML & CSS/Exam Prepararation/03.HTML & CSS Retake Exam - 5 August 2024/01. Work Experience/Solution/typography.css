@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+html {
+    font: 14px/1.5 'Margarine';
+}
+
+body, input, textarea, select, option {
+    font: inherit;
+}
