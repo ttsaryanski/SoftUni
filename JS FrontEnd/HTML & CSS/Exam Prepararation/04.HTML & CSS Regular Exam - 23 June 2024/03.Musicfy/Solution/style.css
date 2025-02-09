@@ -1,0 +1,230 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(layouts.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 3em;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+header ul {
+    display: flex;
+    gap: 2em;
+    margin-right: 2em;
+}
+
+header ul li,
+header ul li a {
+    display: block;
+}
+
+header ul li {
+    padding: 1em 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+aside {
+    position: relative;
+    width: 100%;
+}
+
+aside .green {
+    text-align: center;
+    background-color: #54bf37;
+    color: #fff;
+    height: 30vh;
+    padding-top: 2em;
+}
+
+aside .white {
+    height: 30vh;
+}
+
+aside .aside-media {
+    position: absolute;
+    top: 2em;
+    left: 0;
+}
+
+aside .aside-media img {
+    width: 70%;;
+}
+
+aside .aside-content {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    gap: 8em;
+    top: 6em;
+    left: 50%;
+    translate: -50%;
+}
+
+.aside-content .aside-card {
+    box-shadow: 0 0 0.5em 0 rgb(0, 0, 0, 0.3);
+    border-radius: 0.5em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 25em;
+    justify-content: space-between;
+    gap: 1em;
+    background-color: #fff;
+}
+
+.aside-content .aside-card h3 {
+    text-align: center;
+    margin: 1em 0 1.5em 0;
+    font-size: 1.5em;
+}
+
+.aside-content .aside-card ul {
+    margin: 0 2em 0 2em;
+    list-style-type: circle;
+    opacity: 0.5;
+    font-size: 1.1em;
+}
+
+.aside-content .aside-card button {
+    align-self: center;
+    border: none;
+    background-color: #54bf37;
+    color: #fff;
+    padding: 0.5em 2em;
+    border-radius: 3em;
+}
+
+.aside-content .aside-card .aside-card-footer span:not(:last-child) {
+    border-right: 1px solid #fff;
+    padding-right: 1em;
+    margin-right: 1em;
+}
+
+main {
+    margin: 4em 4em;
+    display: flex;
+    gap: 4em;
+}
+
+.main-media {
+    max-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-media img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content h4 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+.main-content ol {
+    list-style-position: inside;
+    max-width: 85%;
+}
+
+.main-content ol li:not(:last-child) {
+    margin-bottom: 1em;
+
+}
+
+.experience {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.experience h2,
+.experience span {
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 2.5em;
+}
+
+.experience span {
+    font-size: 0.8em;
+    margin: 2em 0;
+}
+
+.experience table {
+    border-collapse: collapse;
+}
+
+.experience table tbody tr:first-child td:first-child {
+    border-top-left-radius: 0.5em;
+}
+
+.experience table tbody tr:first-child td:last-child {
+    border-top-right-radius: 0.5em;
+}
+
+.experience table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 0.5em;
+}
+
+.experience table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 0.5em;
+}
+
+.experience table tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.experience table tbody tr:nth-child(even) {
+    background-color: #95dc97;
+}
+
+.experience table tbody tr td {
+    padding: 0.6em 1.2em;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
