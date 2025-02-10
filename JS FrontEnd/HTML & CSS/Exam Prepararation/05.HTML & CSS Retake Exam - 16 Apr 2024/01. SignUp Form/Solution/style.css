@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 'Kode Mono';
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100dvh;
+    background-color: #c0bdba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body, input, textarea, select, option {
+    font: inherit;
+}
+
+.site {
+    background-color: #29323d;
+    color: #dbe7f3;
+    box-shadow: 0 0 0.2em 0.2em rgb(0, 0, 0, 0.2);
+    padding: 1.5em;
+    border-radius: 0.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.site h2 {
+    text-align: center;
+    font-weight: 200;
+    color: #d9deed;
+}
+
+.buttons ul {
+    display: flex;
+}
+
+.buttons ul li {
+    display: block;
+    flex-basis: 50%;
+    text-align: center;
+    background-color: #56B382;
+    color: #fff;
+    padding: 0.5em 0;
+}
+
+.buttons ul li:last-child {
+    background-color: #48525a;
+}
+
+.buttons ul li:hover {
+    background-color: #4a9c72;
+}
+
+.buttons ul li a {
+    display: block;
+    color: #dbe7f3;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+form .usernames {
+    display: flex;
+    gap: 0.8em;
+}
+
+.holder {
+    position: relative;
+}
+
+.holder input {
+    background-color: #29323d;
+    border: 1px solid #c0bdba;
+    width: 100%;
+}
+
+.holder label {
+    position: absolute;
+    left: 0.8em;
+    top: 0.3em;
+    font-size: 0.9em;
+    color: #c0bdba;
+}
+
+.holder label span {
+    color: #56b382;
+    margin-left: 0.2em;
+}
+
+form button {
+    background-color: #56b382;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.6em 0;
+    font-family: 'Kode Mono';
+    font-size: 1.3em;
+}
+
+
