@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 18px/1.5 'Karla';
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+body, input, textarea, select, option {
+    font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Infant';
+}
+
+h1 {
+    font-size: 90px;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/poster.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2em 4em;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+header h1 {
+    font-size: 5em;
+    margin: 2rem auto;
+}
+
+header span {
+    display: block;
+    padding: 0 28em;
+    font-size: 1.1em;
+    margin-bottom: 4em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 2em;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .logo {
+    height: 3em;
+    aspect-ratio: 1/1;
+}
+
+nav .logo img {
+    width: auto;
+    height: 100%;
+}
+
+.content-01 {
+    background-color: #f6f1e9;
+    padding: 1.5em 20em;
+    color: #332b2a;
+}
+
+.content-01 h5 {
+    font-weight: 500;
+}
+
+.content-01 p {
+    font-family: 'Cormorant Infant';
+    font-style: italic;
+    font-size: 4em;
+    line-height: 0.8;
+    font-weight: 600;
+    margin: 1em 0 2em 0;
+}
+
+.content-02,
+.content-04 {
+    background-color: #cb4c47;
+    color: #fff;
+    text-align: center;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-02 h5 {
+    font-family: 'Karla';
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: 1.5em 0;
+}
+
+.content-02 p {
+    width: 30ch;
+    font-size: 1.2em;
+}
+
+.content-03 {
+    background-color: #f6f1e9;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-03-wrapper {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.content-03-wrapper .media {
+    width: 100%;
+    height: 100%;
+}
+
+.content-03-wrapper .media img {
+    width: 100%;
+    height: 100%;
+}
+
+.content-03-wrapper .section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-03-wrapper .section-content h2 {
+    text-align: center;
+    max-width: 15ch;
+    font-size: 3.5em;
+    line-height: 1;
+    margin: 1em auto;
+}
+
+.content-03-wrapper .section-content p {
+    font-size: 0.9em;
+    line-height: 1.3;
+    margin-bottom: 1em;
+}
+
+.content-03-wrapper .section-content button {
+    align-self: flex-start;
+}
+
+.content-03-wrapper button {
+    margin: 2em 0;
+    padding: 0.8em 1.5em;
+    background-color: #fff;
+    border-radius: 0.3em;
+    border: 1px solid #000;
+}
+
+.content-04 h2 {
+    font-size: 3.5em;
+    margin: 1em;
+}
+
+.content-04 p {
+    width: 80ch;
+    margin-bottom: 2.5em;
+}
+
+.content-04 button {
+    background-color: #efdf66;
+    border: none;
+    padding: 1.2em 1.5em;
+    border-radius: 2em;
+}
+
+
+footer {
+    background-color: #332b2a;
+    padding: 3em 6em;
+    color: #fff;
+}
+
+footer p {
+    display: block;
+    max-width: 30%;
+    margin: 1.5em 0;
+}
+
+footer span {
+    color: #736968;
+    font-size: 0.8em;
+}
+
+footer .logo {
+    height: 2em;
+    aspect-ratio: 1/1;
+}
+
+footer .logo img {
+    width: auto;
+    height: 100%;
+}

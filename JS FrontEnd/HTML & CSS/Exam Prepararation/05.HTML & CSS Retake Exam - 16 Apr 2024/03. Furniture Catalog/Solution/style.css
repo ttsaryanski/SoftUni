@@ -26,11 +26,14 @@ body, input, textarea, select, option {
     font: inherit;
 }
 
+h4 {
+    font-size: 1.6em;
+}
+
 
 header {
-    position: relative;
     width: 100%;
-    background-image: url('/images/background.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('/images/background.jpg');
     background-size: cover;
     background-position: center;
     padding: 2em;
@@ -42,19 +45,16 @@ header {
 .logo {
     width: 80px;
     height: 80px;
-    position: absolute;
-    top: 2em;
-    left: 17em;
 }
 
 .head {
     text-align: center;
     margin: 8em auto;
-    text-shadow: 1px 1px 20px #67686c;
 }
 
 .head h1 {
     font-size: 3.5em;
+    text-shadow: 1px 1px 1px #44454799;
 }
 
 .head p {
@@ -64,24 +64,32 @@ header {
     font-weight: 500;
     width: 60%;
     margin: 0 auto;
+    text-shadow: 1px 1px 1px #44454799;
 }
 
 .head button {
     border: none;
     color: #67686c;
-    background-color: #fff;
+    background-color: #e9eef1;
     font-weight: bold;
     padding: 0.8em 1em;
     font-family: 'PT Sans';
     border-radius: 0.4em;
     margin: 1em;
 }
- 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 19em;
+}
+
 nav ul {
     display: flex;
     justify-content: flex-end;
     gap: 1em;
-    margin-right: 10em;
+    text-shadow: 1px 1px 1px #44454799;
 }
 
 nav ul li,
@@ -104,10 +112,15 @@ main {
 
 .catalog-1,
 .catalog-2 {
-    padding: 2em;
+    padding: 2.5em;
     text-align: center;
     background-color: #79a9c4;
     width: 100%;
+}
+
+.catalog-1 > p,
+.catalog-2 > p {
+    font-size: 1.3em;
 }
 
 .catalog-1 .cards {
@@ -146,6 +159,7 @@ main {
 .simple {
     display: flex;
     justify-content: space-around;
+    padding-top: 2em;
 }
 
 .simple-card {
@@ -179,7 +193,7 @@ main {
 }
 
 .catalog-2-cards .media {
-    flex: 0 1 20em;
+    flex: 0 1 28em;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.5);
 }
 
@@ -204,7 +218,7 @@ aside {
     padding: 1em 20em;
     text-align: center;
     gap: 1.5em;
-    margin: 0.5em auto;
+    margin: 1em auto;
 }
 
 aside > span span {
@@ -212,7 +226,8 @@ aside > span span {
 }
 
 aside span:last-child p {
-    font-size: 0.8em;
+    font-size: 1.2em;
+    margin: 1em 0;
 }
 
 footer {
@@ -220,6 +235,6 @@ footer {
     background-color: #2f323d;
     color: #fff;
     text-align: center;
-    font-size: 0.8em;
-    padding: 0.8em;
+    font-size: 1.2em;
+    padding: 1em;
 }
