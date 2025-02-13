@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 'Ubuntu';
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100dvh;
+}
+
+body, input, textarea, select, option, button, table {
+    font: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3em;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.head h1 {
+    font-size: 3.5em;
+    line-height: 1.2;
+    border-right: 4px solid #DBDBDB;
+    padding-right: 2rem;
+    color: #313131;
+}
+
+.head span {
+    display: inline-block;
+    width: 15ch;
+    height: 3em;
+    position: relative;
+}
+
+.head span a {
+    display: block;
+    text-decoration: none;
+    color: #808080;
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 0.2em;
+    font-size: 1.3em;
+}
+
+header ul {
+    display: flex;
+    gap: 0.1em;
+}
+
+ul li,
+ul li a {
+    display: block;
+}
+
+header ul li {
+    padding: 1.5em;
+    background-color: #ECECEC;
+}
+
+header ul li:first-child {
+    background-color: #56DBB1;
+}
+
+header li a {
+    text-decoration: none;
+    color: #696969;
+    letter-spacing: 0.05em;
+    font-size: 1.5em;
+}
+
+header li:first-child a {
+    text-decoration: none;
+    color: #000;
+}
+
+.section-01 {
+    background-color: #56DBB1;
+    text-align: center;
+}
+
+.section-01 .media {
+    width: 100%;
+}
+
+.section-01 p {
+    padding: 4.5em 10em;
+    font-size: 1.5em;
+}
+
+.cards {
+    padding: 10em;
+    padding-bottom: 9em;
+    display: flex;
+    background-color: #353434;
+    color: #fff;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.card-media {
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: #56DBB1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-media i {
+    font-size: 4em;
+}
+
+.card h4 {
+    font-size: 1.8em;
+    margin: 1.5em auto;
+}
+
+.card hr {
+    border: 1px solid #eee;
+    width: 100%;
+}
+
+.card p {
+    margin-top: 1.5em;
+    color: #5B5956;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.section-02 {
+    text-align: center;
+    padding: 6.5em;
+}
+
+.section-02 h2 {
+    color: #5F5F5F;
+    font-size: 3em;
+}
+
+.section-02 span {
+    display: block;
+    color: #C3BCB8;
+    font-size: 1.5em;
+}
+
+.section-02 button {
+    border: none;
+    background-color: #974D1B;
+    padding: 1.2em 3em;
+    margin-top: 3em;
+}
+
+.section-02 button a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFEC;
+    letter-spacing: 0.1em;
+}
+
+.section-03 {
+    padding: 9.5em;
+    display: flex;
+    background-color: #353434;
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.content h3 {
+    margin-top: 1.5em;
+    font-size: 1.8em;
+}
+
+.content p {
+    margin-top: 1.2em;
+    color: #5B5956;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1B9772;
+    color: #56DBAB;
+    padding: 5em;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    gap: 1em;
+}
+
+footer p {
+    display: flex;
+    border-right: 2px solid #56DBAB;
+    padding-right: 1em;
+    line-height: 1em;
+    gap: 0.5em;
+}
+
+
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: #DBFAEE;
+    letter-spacing: 0.1em;
+}
+
