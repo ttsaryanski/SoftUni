@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 'Helvetica', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100dvh;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body, input, textarea, select, option, button, table {
+    font: inherit;
+}
+
+.banner {
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    background-color: #1881B6;
+    border: 4px solid #000;
+    border-radius: 0.8em;
+    padding: 2em;
+    gap: 1.5em;
+}
+
+.content {
+    padding: 1.8em 0;
+}
+
+.content h1 {
+    color: #fff;
+    margin: 1rem 0;
+    margin-bottom: 0.8rem;
+    font-size: 2.25em;
+    font-weight: 200;
+}
+
+.content h3 {
+    text-transform: uppercase;
+}
+
+.content p {
+    text-indent: 3em;
+    margin-bottom: 1.2em;
+    font-size: 0.9em;
+    line-height: 2;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttons a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 0.3em;
+    color: #000;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0.3em 1em;
+}
+
+.buttons a:first-child {
+    background-color: #B6416D;
+    color: #fff;
+}
+
+.media img {
+    width: 100%;
+    height: 100%;
+}
