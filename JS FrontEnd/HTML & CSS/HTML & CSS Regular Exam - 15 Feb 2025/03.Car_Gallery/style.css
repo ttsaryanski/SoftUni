@@ -77,14 +77,9 @@ header p {
 header button {
     background-color: transparent;
     border: 3px solid #F9D8CD;
-    border-radius: 0.5em;
-    padding: 1.2em 4em;
-    margin-bottom: 8em;
-}
-
-header button a {
-    display: block;
-    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 1.2rem 4rem;
+    margin-bottom: 8rem;
     color: #FFFFFE;
     font-weight: bold;
     font-size: 2em;
@@ -100,7 +95,6 @@ header button a {
     justify-content: center;
     gap: 3em;
     margin: 7em 0 2.5em;
-    /* padding: 0 350px; */
     background-color: #F6F8FB;
     border-top: 1px solid #E8E8E8;
     border-bottom: 1px solid #E8E8E8;
@@ -117,7 +111,6 @@ header button a {
 }
 
 .cards {
-    /* padding: 0 350px; */
     display: flex;
     justify-content: center;
     gap: 3em;
@@ -146,19 +139,19 @@ header button a {
 
 .cards button {
     align-self: center;
-    margin: 3em 0;
+    margin: 3rem 0;
     border: 1px solid #C2C7CC;
-    padding: 1.4em 3.2em;
+    padding: 1.4rem 3.2rem;
     background-color: transparent;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
+    color: #93A2AB;
+    font-size: 1.3em;
+    font-weight: 100;
 }
 
 .cards .card button a {
     display: block;
     text-decoration: none;
-    color: #93A2AB;
-    font-size: 1.3em;
-    font-weight: 100;
 }
 
 .auth {
@@ -186,13 +179,8 @@ header button a {
     border: none;
     border-radius: 0.3em;
     background-color: #fff;
-    padding: 0.5em 1.4em;
-    margin-left: 1em;
-}
-
-.auth button a {
-    display: block;
-    text-decoration: none;
+    padding: 0.7em 1.8em;
+    margin-left: 1.2em;
     color: #27636B;
     font-size: 0.8em;
 }
@@ -214,19 +202,19 @@ header button a {
 .content-02 button {
     margin: 0 0;
     border: 1px solid #C2C7CC;
-    padding: 1.4em 3.6em;
+    padding: 1.4rem 3.6rem;
     background-color: transparent;
-    border-radius: 0.5em;
-    margin-bottom: 1.5em;
-}
-
-.content-02 button a {
-    display: block;
-    text-decoration: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
     color: #93A2AB;
     font-size: 1.3em;
     font-weight: 100;
 }
+
+/* .content-02 button a {
+    display: block;
+    text-decoration: none;
+} */
 
 .content-02 .images {
     display: flex;
