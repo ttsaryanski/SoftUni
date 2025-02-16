@@ -1,0 +1,40 @@
+body {
+    border: 2px solid green;
+    gap: 2em;
+    padding: 2em;
+    min-height: auto;
+}
+
+header,
+main,
+aside,
+footer {
+    width: 100%;
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.content {
+    padding: 2em 0;
+    width: 60%;
+}
+
+@media (max-width: 800px) {
+    .content {
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+}

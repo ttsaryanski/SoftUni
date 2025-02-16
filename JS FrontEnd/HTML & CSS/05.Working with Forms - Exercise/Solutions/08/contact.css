@@ -1,0 +1,80 @@
+h2 {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 0.2em;
+    transition: translate 0.2s ease-in;
+}
+
+span {
+    color: #898989;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8em 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+.field {
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.field label {
+    order: -1;
+    position: absolute;
+    top: 0.8em;
+    color: #666;
+}
+
+.field textarea + label {
+    position: relative;
+    top: auto;
+}
+
+.field input::placeholder {
+    color: transparent;
+}
+
+.field input:not(:placeholder-shown) ~ label {
+    translate: 0 -1.5em;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #efefef;
+    color: #000;
+    font-weight: bold;
+    border-radius: 0.3em;
+    padding: 0.8em 1em;
+}
+
+.field .helper {
+    display: block;
+    font-size: 0.85em;
+    font-weight: bold;
+    opacity: 0.5;
+    pad: 0.1em 0 0.2em 0;
+}
+
+.container {
+    width: 100vw;
+    max-width: 25em;
+}

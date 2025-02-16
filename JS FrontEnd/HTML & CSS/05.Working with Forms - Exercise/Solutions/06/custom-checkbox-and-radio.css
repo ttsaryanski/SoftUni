@@ -1,0 +1,80 @@
+.container {
+    width: 100vw;
+    max-width: 30em;
+}
+
+form > div:not(:first-child) {
+    margin-top: 2em;
+}
+
+h2 {
+    margin-bottom: 1em;
+    font-weight: 900;
+}
+
+.field {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type=radio] {
+    width: 2em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+    border: 2px solid #ddd;
+    background-color: #eee;
+}
+
+input[type=radio]:checked {
+    border: 4px solid #FFA500;
+    background-color: #C67615;
+}
+
+input[type=checkbox] {
+    height: 2em;
+    aspect-ratio: 2/1;
+    border-radius: 3em;
+    border: 2px solid #ddd;
+    background-color: #eee;
+    transition: 0.2s ease-in;
+}
+
+input[type=checkbox]:checked {
+    background-color: #FFA500;
+    border: none;
+    transition: 0.2s ease-in;
+}
+
+input[type=checkbox]::after {
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    top: 50%;
+    left: 0.3em;
+    translate: 0 -50%;
+    aspect-ratio: 1/1;
+    background-color: #C67615;
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+}
+
+input[type=checkbox]:checked::after {
+    position: absolute;
+    left: calc(100% - 1.8em);
+    transition: 0.2s ease-in;
+}
