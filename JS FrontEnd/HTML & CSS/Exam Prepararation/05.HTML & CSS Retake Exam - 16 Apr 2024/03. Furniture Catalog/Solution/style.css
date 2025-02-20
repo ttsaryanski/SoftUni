@@ -27,24 +27,25 @@ body, input, textarea, select, option {
 }
 
 h4 {
-    font-size: 1.6em;
+    font-size: 2em;
 }
 
 
 header {
     width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('/images/background.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('images/background.jpg');
     background-size: cover;
     background-position: center;
     padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 10em;
+    height: 10em;
 }
 
 .head {
@@ -53,12 +54,12 @@ header {
 }
 
 .head h1 {
-    font-size: 3.5em;
+    font-size: 4.5em;
     text-shadow: 1px 1px 1px #44454799;
 }
 
 .head p {
-    font-size: 1.5em;
+    font-size: 1.8em;
     padding: 1em;
     line-height: 1.5;
     font-weight: 500;
@@ -70,25 +71,26 @@ header {
 .head button {
     border: none;
     color: #67686c;
-    background-color: #e9eef1;
+    background-color: #f1efe9;
     font-weight: bold;
-    padding: 0.8em 1em;
+    padding: 0.6em 1em;
     font-family: 'PT Sans';
     border-radius: 0.4em;
     margin: 1em;
+    font-size: 1.5em;
 }
 
 nav {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 19em;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end;
-    gap: 1em;
+    gap: 1.5em;
     text-shadow: 1px 1px 1px #44454799;
 }
 
@@ -101,6 +103,7 @@ li a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    font-size: 1.3em;
 }
 
 
@@ -114,7 +117,7 @@ main {
 .catalog-2 {
     padding: 2.5em;
     text-align: center;
-    background-color: #79a9c4;
+    background-color: #60ACC1;
     width: 100%;
 }
 
@@ -143,7 +146,7 @@ main {
 
 .catalog-1 .cards .card .card-content {
     background-color: #fff;
-    border-right: 8px solid #79a9c4;
+    border-right: 8px solid #60ACC1;
     padding: 3em 2em;
 }
 
@@ -159,15 +162,18 @@ main {
 .simple {
     display: flex;
     justify-content: space-around;
-    padding-top: 2em;
 }
 
 .simple-card {
-    flex: 0 1 23em;
+    flex: 0 1 30em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.simple-card h4 {
+    font-size: 1.5em;
 }
 
 .simple-card-media {
@@ -223,10 +229,12 @@ aside {
 
 aside > span span {
     font-style: italic;
+    font-size: 1.5em;
+    line-height: 1;
 }
 
 aside span:last-child p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 1em 0;
 }
 

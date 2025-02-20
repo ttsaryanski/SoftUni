@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    background-image: url('/images/background.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-position: top;
     padding: 3em 5em;

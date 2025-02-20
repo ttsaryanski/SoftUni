@@ -214,7 +214,7 @@ aside section {
 .footer-content h2 {
     margin-top: 2em;
     margin-bottom: 0.5em;
-    font-size: 2em;
+    font-size: 2.8em;
     color: #e293b6;
 }
 
@@ -225,12 +225,14 @@ aside section {
 .footer-content ul {
     display: flex;
     justify-content: center;
+    gap: 0.5em;
+    align-items: center;
     margin-bottom: 1em;
     padding: 0;
 }
 
 .footer-socials li {
-    display: inline-block;
+    display: block;
 }
 
 .footer-socials li a {
@@ -245,12 +247,13 @@ aside section {
 
 .footer-contacts {
     display: flex;
+    justify-content: center;
     width: 50%;
-    gap: 1em;
 }
 
 .footer-contacts div {
     color: #555;
+    width: 50%;
 }
 
 .footer-contacts div h6 {
@@ -266,14 +269,15 @@ aside section {
     font-size: 0.9em;
 }
 
-.footer-contacts div:last-child {
-    border-left: 1px solid #555;
-    padding-left: 1em;
+.footer-contacts div:first-child {
+    border-right: 1px solid #555;
+    text-align: right;
+    padding-right: 1em;
+    
 }
 
-.footer-contacts div:first-child {
-    text-align: right;
-    
+.footer-contacts div:last-child {
+    padding-left: 1em;
 }
 
 .footer-content > span {

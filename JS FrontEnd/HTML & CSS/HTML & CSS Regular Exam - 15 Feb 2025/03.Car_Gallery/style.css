@@ -155,7 +155,7 @@ header button {
 }
 
 .auth {
-    background-image: url('/images/promo.jpg');
+    background-image: url('images/promo.jpg');
     background-size: cover;
     padding: 8.5em;
     display: flex;
