@@ -9,7 +9,7 @@ function validator(
 
     descriptor.set = function (val: number) {
         if (val < 1 || val > 200) {
-            console.error("Error: Age must be between 1 and 200");
+            throw new Error("Error: Age must be between 1 and 200");
         }
         originalSet?.call(this, val);
     };

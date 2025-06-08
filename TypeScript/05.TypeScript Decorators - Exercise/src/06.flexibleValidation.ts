@@ -12,8 +12,8 @@ function nameValidator(minLength: number) {
 
         descriptor.set = function (val: string) {
             if (val.length < minLength) {
-                console.error(
-                    `Runtime Error: name must have a min length of ${minLength} characters`
+                throw new Error(
+                    `Error: name must have a min length of ${minLength} characters`
                 );
             }
             originalSet?.call(this, val);
@@ -33,9 +33,7 @@ function ageValidator(min: number, max: number) {
 
         descriptor.set = function (val: number) {
             if (val < min || val > max) {
-                console.error(
-                    `Runtime Error: Age must be between ${min} and ${max}`
-                );
+                throw new Error(`Error: Age must be between ${min} and ${max}`);
             }
             originalSet?.call(this, val);
         };
@@ -54,9 +52,7 @@ function passValidator(regex: RegExp) {
 
         descriptor.set = function (val: string) {
             if (!val.match(regex)) {
-                console.error(
-                    `Runtime Error: password needs to match ${regex}`
-                );
+                throw new Error(`Error: password needs to match ${regex}`);
             }
             originalSet?.call(this, val);
         };
