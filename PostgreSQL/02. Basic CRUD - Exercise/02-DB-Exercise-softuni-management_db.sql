@@ -1,7 +1,9 @@
 SELECT
-	number || ' ' || street AS address,
-	city_id
-FROM addresses
-WHERE id >= 20;
-
-SELECT * FROM addresses;
+	id,
+	CONCAT(first_name, ' ', last_name) AS full_name,
+	job_title
+FROM
+	employees
+ORDER BY
+	first_name
+LIMIT 50;
