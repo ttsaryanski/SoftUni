@@ -8,7 +8,7 @@ SELECT
 	 	WHEN 1 THEN 'Management'
 	 	WHEN 2 THEN 'Kitchen Staff'
 	 	WHEN 3 THEN 'Service Staff'
-	ELSE 'Other'	
+		ELSE 'Other'	
 	END	AS department_name
 FROM
 	employees
